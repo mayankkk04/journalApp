@@ -27,4 +27,6 @@ public class User {
 
     @DBRef //creating refrences of Journal entries in user
     private List<JournalEntry> journalEntries = new ArrayList<>();
+
+    private List<String> roles; //assigning user roles like admin etc
 }

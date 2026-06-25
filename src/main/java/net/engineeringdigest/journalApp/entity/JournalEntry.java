@@ -10,7 +10,7 @@ import java.util.Date;
 
 @Document(collection = "journal_entries")
 @Data
-@NoArgsConstructor
+@NoArgsConstructor //for deserialization
 public class JournalEntry {
     private ObjectId id;
     @NonNull
