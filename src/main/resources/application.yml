@@ -3,13 +3,31 @@
 #spring.data.mongodb.auto-index-creation=true
 
 spring:
+  redis:
+    host: localhost
+    port: 6379
   data:
     mongodb:
       uri: mongodb+srv://mayankpimpale01:murphy2004@cluster0.qmakj.mongodb.net/?appName=Cluster0
       database: journaldb
       auto-index-creation: true
+  mail:
+    host: smtp.gmail.com
+    port: 587 #service host port
+    username: email@gmail.com #your email
+    password: xxxx xxxx xxxx  #app password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:  #start transport layer security
+            enable:true
 
 server:
   port: 8080
   servlet:
     context-path: /journal
+
+weather:
+  api:
+    key: 3a0996c0e7565f55c9d88b807133dcf1
