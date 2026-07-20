@@ -61,6 +61,26 @@
 			<version>1.18.46</version>
 			<scope>provided</scope>
 		</dependency>
+		<!-- The API contains the 'Keys' class -->
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-api</artifactId>
+			<version>0.12.6</version>
+		</dependency>
+		<!-- The Implementation runtime engine -->
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-impl</artifactId>
+			<version>0.12.6</version>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- The Jackson JSON serializer/deserializer -->
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-jackson</artifactId>
+			<version>0.12.6</version>
+			<scope>runtime</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
